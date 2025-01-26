@@ -1,0 +1,38 @@
+<html>
+
+<head>
+</head>
+<title>
+    Arrays
+</title>
+
+<body>
+    <p id="result">
+    </p>
+    <p id="result1">
+    </p>
+    <p id="result2">
+    </p>
+    <p id="result3">
+    </p>
+</body>
+<script>
+
+    var student = {
+        name: 'Cyrus',
+        age: '10',
+        Grade: '4',
+        hobbies: 'Soccer',
+        fav_sport: 'Soccer'
+    };
+
+    var color = ["white", "blue", "black", "red", "green", "purple"]
+
+    document.getElementById("result").innerHTML = ("Student Name Is: " + student.name + "<br>" + "Student Favourite Sport Is: " + student.fav_sport)
+    document.getElementById("result1").innerHTML = ("Before Popping, The Colours Are: " + color.join(", "))
+    document.getElementById("result2").innerHTML = ("Student Favourite Color Is: " + color[1]);
+    color.pop()
+    document.getElementById("result3").innerHTML = ("After Popping, The Colours Are: " + color.join(", "))
+</script>
+
+</html>
