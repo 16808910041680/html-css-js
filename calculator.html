@@ -1,0 +1,159 @@
+<html>
+
+<head>
+    <script src="calculator.js">
+
+    </script>
+</head>
+<title>
+</title>
+<style>
+    .button {
+  width: 10%;
+  height: 40px;
+}
+
+#equals {
+  background-color: #0096FF;
+  border: 0px;
+  color: white;
+}
+
+#AC {
+  background-color: #ADD8E6;
+  border: 0px;
+}
+#abcdefg {
+  width: 35%;
+  height: 40px;
+}
+.operators {
+  width: 5%;;
+  height: 40px;
+  color: black;
+  background-color: #ADD8E6;
+  border: 0px;
+}
+</style>
+<body>
+    <h1>Calculator App</h1>
+    <button id="7" class="button" onclick="store7()">7</button>
+    <button id="8" class="button" onclick="store8()">8</button>
+    <button id="9" class="button" onclick="store9()">9</button>
+    <button id="divide" class="operators" onclick="checkOp4()">➗</button>
+    <br><br>
+    <button id="4" class="button" onclick="store4()">4</button>
+    <button id="5" class="button" onclick="store5()">5</button>
+    <button id="6" class="button" onclick="store6()">6</button>
+    <button id="multiply" class="operators" onclick="checkOp3()">X</button>
+    <br><br>
+    <button id="1" class="button" onclick="store1()">1</button>
+    <button id="2" class="button" onclick="store2()">2</button>
+    <button id="3" class="button" onclick="store3()">3</button>
+    <button id="minus" onclick="checkOp2()" class="operators">-</button>
+    <br><br>
+    <button id="0" class="button" onclick="store0()">0</button>
+    <button id="equals" class="button" onclick="performOperation()">=</button>
+    <button id="AC" class="button" onclick="delete1()">AC</button>
+    <button id="plus" onclick="checkOp1()" class="operators">+</button>
+    <br><br>
+    <input id="abcdefg" placeholder="Numbers Will Appear Here" type="number">
+</body>
+<script>
+    var storeabcdefg = document.getElementById("abcdefg").value
+    var storage = 0
+        var storenumbers = ""
+        var ifoperation = false
+        var storeoperation = ""
+        function store0() {
+            var storage = 0
+            var storenumbers
+            document.getElementById("abcdefg").value += "0"
+        }
+        function store1() {
+            var storage = 1
+            document.getElementById("abcdefg").value += "1"
+        }
+        function store2() {
+            var storage = 2
+            document.getElementById("abcdefg").value += "2"
+        }
+        function store3() {
+            var storage = 3
+            document.getElementById("abcdefg").value += "3"
+        }
+        function store4() {
+            var storage = 4
+            document.getElementById("abcdefg").value += "4"
+        }
+        function store5() {
+            var storage = 5
+            document.getElementById("abcdefg").value += "5"
+        }
+        function store6() {
+            var storage = 6
+            document.getElementById("abcdefg").value += "6"
+
+        }
+        function store7() {
+            var storage = 7
+            document.getElementById("abcdefg").value += "7"
+        }
+        function store8() {
+            var storage = 8
+            document.getElementById("abcdefg").value += "8"
+        }
+        function store9() {
+            var storage = 9
+            document.getElementById("abcdefg").value += "9"
+        }
+
+        function checkOp1() {
+            var storeoperation = "+"
+            if (ifoperation == false) {
+                document.getElementById("abcdefg").value += storeoperation
+                ifoperation = true
+            }
+            else {
+
+            }
+        }
+        function checkOp2() {
+            var storeoperation = "-"
+            if (ifoperation == false) {
+                document.getElementById("abcdefg").value += storeoperation
+                ifoperation = true
+            }
+            else {
+
+            }
+        }
+        function checkOp3() {
+            var storeoperation = "*"
+            if (ifoperation == false) {
+                document.getElementById("abcdefg").value += storeoperation
+                ifoperation = true
+            }
+            else {
+
+            }
+        }
+        function checkOp4() {
+            var storeoperation = "/"
+            if (ifoperation == false) {
+                document.getElementById("abcdefg").value += storeoperation
+                ifoperation = true
+            }
+            else {
+
+            }
+
+            function performOperation() {
+                 document.getElementById("abcdefg").value += "="
+                abcdefg = number(abcdefg);
+                storeabcdefg = document.getElementById("abcdefg").value
+                storeabcdefg.pop()
+            }
+        }
+</script>
+</html>
