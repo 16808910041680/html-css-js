@@ -9,19 +9,19 @@
 
     .topnav a {
         float: left;
-        color: deeppink;
+        color: plum;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
+        background-color: black;
     }
 
     .topnav a:hover {
-        background-color: blueviolet;
-        color: deepskyblue
+        color: yellow;
     }
 
     .topnav a:active {
-        background-color: yellowgreen;
-        color: darkcyan;
+        color:blue;
+        
     }
