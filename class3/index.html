@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            text-transform: capitalize;
+        }
+        .carousel container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+        .myslides {
+            display: none;
+            max-height: 100%;
+            max-width: 100%;
+        }
+        img {
+            height: 500;
+            width: 500;
+        }
+    </style>
+    <body>
+        <h1>
+           Bananas 
+        </h1>
+        <div class="carousel container">
+            <img src="banana - Copy.jpg" class="myslides">
+            <img src="bananana.jpg" class="myslides">
+            <img src="banananana.jpg" class="myslides">
+            <img src="bananananana.jpg" class="myslides">
+            <img src="banananananana.jpg" class="myslides">
+        </div>
+    </body>
+    <script>
+        var index = 0
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("myslides");
+            for (i=0; i<x.length; i++) {
+                x[i].style.display = "none";
+            }
+            index++ 
+            if (index > x.length) {
+                index = 1;
+            }
+            x[index-1].style.display = "block";
+            setTimeout (carousel, 3000)
+        }
+        carousel();
+    </script>
+</html>
