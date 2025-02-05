@@ -5,7 +5,7 @@
     <style>
         h1 {
             text-align: center;
-            text-decoration: underline;
+            
             text-transform: capitalize;
         }
         .carousel container {
@@ -26,18 +26,23 @@
     </style>
     <body>
         <h1>
-           Bananas 
+           Banana<a style="color: white">nananana</a> 
         </h1>
         <div class="carousel container">
-            <img src="banana - Copy.jpg" class="myslides">
-            <img src="bananana.jpg" class="myslides">
-            <img src="banananana.jpg" class="myslides">
-            <img src="bananananana.jpg" class="myslides">
-            <img src="banananananana.jpg" class="myslides">
+            <img src="banana - Copy.jpg" class="myslides" onclick="check1()">
+            <img src="bananana.jpg" class="myslides" onclick="check2()">
+            <img src="banananana.jpg" class="myslides" onclick="check3()">
+            <img src="bananananana.jpg" class="myslides" onclick="check4()">
+            <img src="banananananana.jpg" class="myslides" onclick="check5()">
         </div>
     </body>
     <script>
         var index = 0
+        var i1 = false
+        var i2 = false
+        var i3 = false
+        var i4 = false
+        var i5 = false
         function carousel() {
             var i;
             var x = document.getElementsByClassName("myslides");
@@ -52,5 +57,65 @@
             setTimeout (carousel, 3000)
         }
         carousel();
+        function check1() {
+            if (i1 == false) {
+                i1 == true;
+            }
+            else if (i1 == false & i2 == false & i3 == false & i4 == false & i5 == false) {
+              document.body.style.backgroundColor = "black";
+               alert("Here's A Disclaimer!")
+            }
+            else {
+                i1 == false;
+            }
+        }
+               function check2() {
+                    if (i2 == false) {
+                        i2 == true;
+                    }
+                    else if (i1 == false & i2 == false & i3 == false & i4 == false & i5 == false) {
+                        document.body.style.backgroundColor = "black";
+                         alert("Here's A Disclaimer!")
+                    }
+                    else {
+                        i2 == false;
+                    }
+                }
+                        function check3() {
+            if (i3 == false) {
+                i3 == true;
+            }
+            else if (i1 == false & i2 == false & i3 == false & i4 == false & i5 == false) {
+              document.body.style.backgroundColor = "black";
+               alert("Here's A Disclaimer!")
+            }
+            else {
+                i3 == false;
+            }
+         function check4() {
+            if (i4 == false) {
+                i4 == true;
+            }
+            else if (i1 == false & i2 == false & i3 == false & i4 == false & i5 == false) {
+              document.body.style.backgroundColor = "black";
+               alert("Here's A Disclaimer!")
+            }
+            else {
+                i4 == false;
+            }
+        }
+        function check5() {
+            if (i5 == false) {
+                i5 == true;
+            }
+            else if (i1 == false & i2 == false & i3 == false & i4 == false & i5 == false) {
+              document.body.style.backgroundColor = "black";
+              alert ("Here's A Disclaimer!")
+            }
+            else {
+                i5 == false;
+            }
+        }
+        }
     </script>
 </html>

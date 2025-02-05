@@ -1,0 +1,49 @@
+.container {
+    text-align: center;
+    color: white;
+    background-size: 100%;
+    position: relative;
+    width: 100%;
+}
+#section2 {
+    color: black;
+    background-image: url("hi.jpg");
+}
+#section2 p {
+    opacity: 20%;
+}
+#section2 a {
+    opacity: 2%;
+}
+#section3 {
+    background-image: url("https://media.istockphoto.com/id/1458782106/photo/scenic-aerial-view-of-the-mountain-landscape-with-a-forest-and-the-crystal-blue-river-in.jpg?s=1024x1024&w=is&k=20&c=iPdhO2H3jeYh4UWmNlrXNmiiK04iaLykIMiD9u1yDq4=");
+}
+.hi, .images, #section3 {
+    position: relative; 
+    opacity: 0,70; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.images, #section3 {
+    min-height: 400px;
+}
+.hi {
+    min-height: 100%;
+}
+
+.sections {
+    text-align: center;
+    padding: 50, 50;
+}
+
+.ptext {
+    position: absolute;
+}
+media {
+    max-width: 500px;
+    .hi, .images, #section3 {
+        background-attachment: scroll;
+    }
+}
