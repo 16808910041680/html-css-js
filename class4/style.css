@@ -5,7 +5,7 @@
     position: relative;
     width: 100%;
 }
-#section2 {
+#section2, #hi {
     color: black;
     background-image: url("hi.jpg");
 }
