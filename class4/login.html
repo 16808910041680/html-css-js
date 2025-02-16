@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <input type="text" id="name" placeholder = "Name">
+        <input type="number" id="age" placeholder = "Age">
+        <button onclick = "submit()">
+            Submit
+        </button>
+        <p>Login failed</p>
+    </body>
+    <script>
+        function submit() {
+             var num = getElementById("age").value
+             if (num <= 16) {
+                alert ("Dude! If you're a kid, this isn't a kids website! Go somewhere else please")
+             }
+             else {
+                alert ("Dude! Not everyone wants adults here! There are kids on this website! Go somewhere else please")
+             }
+        }
+    </script>
+</html>

@@ -1,31 +1,137 @@
 <html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <section id="section1" class="sections" style="background-image: url(images.jpg);">
-                <h1>
-                    Hello Everyone!
-                </h1>
-                <p>This Is Sam Whoeverthatis (is that a real last name?) saying what I just said in the title. 
-                </p>
-             <br>
-            </section>
-            <section id="section2" class="sections">
-                I love reusing images! It's way easier!
-            </section>
-            <section id="section3" class="sections">
-        <button onclick="hi()">Totally Good Button</button>
-            </section>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="topnav"><a class="active" href="index.html">Home</a><a href="gallery.html">Gallery</a><a href="services.html">Services</a><a href="about.html">About
+                Us</a><a href="contactus.html">Please Don't Contact Us (The Buttons Lead To Nowhere)</a>
         </div>
-    </body>
-    <footer class="footer">
-        <image src="icons.jpg" id="icons"></image>
-        <p id="Bohoowaer">Copywrited By Cyrus. Partnered With Bri'ish Ac'ent Prod'uctions and Don't Ask Them to say
-            <a href="https://www.youtube.com/watch?v=s9iKuZJSxc0">Bo'ho'o'wa'er.</a>
-        </p>
-    </footer>
+        <section id="section1" class="sections" style="background-image: url(images.jpg);">
+            <h1>
+                Hello Everyone!
+            </h1>
+            <p>Hello Everyone!
+            </p>
+            <br>
+        </section>
+        <section id="section2" class="sections">
+        Hello Everyone!
+        </section>
+        <section id="section3" class="sections">
+            <button onclick="hi()">Hello Everyone!</button>
+        </section>
+    </div>
+        <h1>
+            Banana<a style="color: white">nananana</a>
+        </h1>
+        <div class="carousel container">
+            <img src="banana - Copy.jpg" class="myslides" onclick="check1()">
+            <img src="bananana.jpg" class="myslides" onclick="check2()">
+            <img src="banananana.jpg" class="myslides" onclick="check3()">
+            <img src="bananananana.jpg" class="myslides" onclick="check4()">
+            <img src="banananananana.jpg" class="myslides" onclick="check5()">
+        </div>
+        Bananas, are a natural fruit found in banana trees. Yes, these yellow telephone-shaped objects are edible, but not from straight from the skin. Peeling the skin is required before digesting the banana. Here's a fun fact: Alexander The Great himself discovered bananas in India and showed them to the West, but bananas have been first originated from India. Please don't make me type banana again, as this has lead to a variety of spelling errors and mistakes that I have erased myself, because this paragraph's wording is extremely, aggravatingly, confusiing. With my solemn condolences, I wish you won't need me to type up another paragraph about bananas. Vote below.
+        <button onclick = "vote()">
+            Vote Yes
+        </button>
+        <button>
+            Vote No
+        </button>
+    <script>
+        var index = 0
+        var i1 = false
+        var i2 = false
+        var i3 = false
+        var i4 = false
+        var i5 = false
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("myslides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            index++
+            if (index > x.length) {
+                index = 1;
+            }
+            x[index - 1].style.display = "block";
+            setTimeout(carousel, 3000)
+        }
+        carousel();
+        function check1() {
+            if (i1 == false) {
+                i1 == true;
+            }
+            else if (i1 == false & i2 == false & i3 == false & i4 == false & i5 == false) {
+                document.body.style.backgroundColor = "black";
+                alert("Here's A Disclaimer!")
+            }
+            else {
+                i1 == false;
+            }
+        }
+        function check2() {
+            if (i2 == false) {
+                i2 == true;
+            }
+            else if (i1 == false & i2 == false & i3 == false & i4 == false & i5 == false) {
+                document.body.style.backgroundColor = "black";
+                alert("Here's A Disclaimer!")
+            }
+            else {
+                i2 == false;
+            }
+        }
+        function check3() {
+            if (i3 == false) {
+                i3 == true;
+            }
+            else if (i1 == false & i2 == false & i3 == false & i4 == false & i5 == false) {
+                document.body.style.backgroundColor = "black";
+                alert("Here's A Disclaimer!")
+            }
+            else {
+                i3 == false;
+            }
+            function check4() {
+                if (i4 == false) {
+                    i4 == true;
+                }
+                else if (i1 == false & i2 == false & i3 == false & i4 == false & i5 == false) {
+                    document.body.style.backgroundColor = "black";
+                    alert("Here's A Disclaimer!")
+                }
+                else {
+                    i4 == false;
+                }
+            }
+            function check5() {
+                if (i5 == false) {
+                    i5 == true;
+                }
+                else if (i1 == false & i2 == false & i3 == false & i4 == false & i5 == false) {
+                    document.body.style.backgroundColor = "black";
+                    alert("Here's A Disclaimer!")
+                }
+                else {
+                    i5 == false;
+                }
+            }
+        }
+    </script>
+    
+    </html>
+</body>
+<footer class="footer">
+    <image src="icons.jpg" id="icons"></image>
+    <p id="Bohoowaer">Copywrited By Cyrus. Partnered With Bri'ish Ac'ent Prod'uctions and Don't Ask Them to say
+        <a href="https://www.youtube.com/watch?v=s9iKuZJSxc0">Spo' d' dif'rence fr' this li'nk</a>
+    </p>
+</footer>
+
 </html>

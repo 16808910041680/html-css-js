@@ -35,7 +35,6 @@
 
 .sections {
     text-align: center;
-    padding: 50, 50;
 }
 
 .ptext {
@@ -49,8 +48,6 @@ media {
 }
 .footer {
     position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
     background-color: black;
     color: white;
@@ -65,3 +62,53 @@ media {
 #bohoowaer {
     text-align: right;
 }
+        body {
+            margin: 0;
+        }
+    
+        .topnav {
+            overflow: hidden;
+            color: #333;
+        }
+    
+        .topnav a {
+            float: left;
+            color: plum;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            background-color: black;
+        }
+    
+        .topnav a:hover {
+            color: yellow;
+        }
+    
+        .topnav a:active {
+            color: blue;
+    
+        }
+                        h1 {
+                            text-align: center;
+            
+                            text-transform: capitalize;
+                        }
+            
+                        .carousel container {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 300px;
+                        }
+            
+                        .myslides {
+                            display: none;
+                            max-height: 100%;
+                            max-width: 100%;
+                        }
+            
+                        img {
+                            height: 500;
+                            width: 500;
+                        }
