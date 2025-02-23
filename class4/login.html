@@ -5,17 +5,20 @@
         <button onclick = "submit()">
             Submit
         </button>
-        <p>Login failed</p>
+        <a style="visibility: hidden; color: red" id="i" href="index.html">Login failed</a>
     </body>
     <script>
         function submit() {
              var num = getElementById("age").value
-             if (num <= 16) {
+             getElementById("i").style.visibility = "visible"
+             if (num <= 18) {
                 alert ("Dude! If you're a kid, this isn't a kids website! Go somewhere else please")
              }
              else {
                 alert ("Dude! Not everyone wants adults here! There are kids on this website! Go somewhere else please")
              }
+             setTimeout (3000)
+             alert ("Click the login failed tag")
         }
     </script>
 </html>
